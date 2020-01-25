@@ -1,0 +1,5 @@
+node_modules/*
+private/*
+.env
+.coveralls.yml
+.nyc_output/*

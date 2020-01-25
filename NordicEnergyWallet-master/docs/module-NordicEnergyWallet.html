@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JSDoc: Module: NordicEnergyWallet</title>
+  <script src="scripts/prettify/prettify.js"> </script>
+  <script src="scripts/prettify/lang-css.js"> </script>
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+  <div id="main">
+    <h1 class="page-title">Module: NordicEnergyWallet</h1>
+    <section>
+      <header>
+      </header>
+      <article>
+        <div class="container-overview">
+          <div class="description">
+            <p>Ethereum Blockchain Wallet implementing Green Energy semantics for Nordic Energy Token based decentralized capacity market.</p>
+          </div>
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>, <a href="index.js.html#line1">line 1</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <h3 class="subsection-title">Members</h3>
+        <h4 class="name" id="~CORRENTLY"><span class="type-signature">(inner, constant) </span>NORDIC ENERGY<span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Core Constants for semantics used in decentralized capacity market</p>
+        </div>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line16">line 16</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h3 class="subsection-title">Methods</h3>
+        <h4 class="name" id="~buyCapacity"><span class="type-signature">(inner) </span>buyCapacity<span class="signature">(asset, quantity)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>OTC buy capacity from market</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>asset</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address Contract to buy from</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="name"><code>quantity</code></td>
+              <td class="type">
+                <span class="param-type">number</span>
+              </td>
+              <td class="description last">
+                <p>Amount of capacity to buy</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line109">line 109</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~NordicEnergyAccount"><span class="type-signature">(inner) </span>NordicEnergyAccount<span class="signature">(address)</span><span class="type-signature"> → {Object}</span></h4>
+        <div class="description">
+          <p>Digital twin of consensus driven account identified by address</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>address</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address of a twinable account</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line27">line 27</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Digital twin identified by address</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">Object</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~CorrentlyIoT"><span class="type-signature">(inner) </span>NordicEnergyIoT<span class="signature">(address)</span><span class="type-signature"> → {number}</span></h4>
+        <div class="description">
+          <p>IoT Wrapper to NordicEnergy-IoT implementation</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>address</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address of a thing</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line65">line 65</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Value of thing</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">number</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~deleteData"><span class="type-signature">(inner) </span>deleteData<span class="signature">(address)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>GDPR compliance to delete personal and private data from OTC transactions</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>address</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address of wallet</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line84">line 84</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~deletePending"><span class="type-signature">(inner) </span>deletePending<span class="signature">(nonce)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Delete a pending transaction from q</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>nonce</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>nonce of a pending transaction</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line261">line 261</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~linkDemand"><span class="type-signature">(inner) </span>linkDemand<span class="signature">(ethereumAddress)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Link confirmed consumption source to wallet. Any provider or authority might create new demand links. Typical use of this function is after receiving a demandLink from a provider/utility.</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>ethereumAddress</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address to link with</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line149">line 149</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~Market"><span class="type-signature">(inner) </span>Market<span class="signature">()</span><span class="type-signature"> → {Object}</span></h4>
+        <div class="description">
+          <p>Retrieve market data OTC (Over the counter trade) as provided by Nordic Energy Corp</p>
+        </div>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line311">line 311</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Market data of all assets</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">Object</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~newDemand"><span class="type-signature">(inner) </span>newDemand<span class="signature">(options)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Request new Demand Link - This method might be used to tell an energy provider to publish a new deman link for this account. Typical usage is to set email and provider in options. The given energy provider will get in contact with you to negotiate an offer. As soon as an energy contract is in place a demanLink will be published and could be used with the function <code>linkDemand</code>.</p>
+          <p>Typical Options:</p>
+          <ul>
+            <li>email: communication address for contract, offer negotiation. Only allowed to be used for this Communication</li>
+            <li>provider: Might be 'nordicenergy' as contact persion (request will be routed to this provider)</li>
+            <li>yearlyDemand: Kilo-Watt-Hours per Year requested</li>
+            <li>address: Geo-Coded Address for point of consumption</li>
+          </ul>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>options</code></td>
+              <td class="type">
+                <span class="param-type">object</span>
+              </td>
+              <td class="description last">
+                <p>Options required for energy provider to create a demandLink</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line204">line 204</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~performance"><span class="type-signature">(inner) </span>performance<span class="signature">(asset)</span><span class="type-signature"> → {Object}</span></h4>
+        <div class="description">
+          <p>Retrieve Performance profile of given asset. Nordic Energy has a day based performance monitoring for assets on the market. This is subject to be changed in later releases to merge with Performance package</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>asset</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>transaction hash of asset contract setup</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line324">line 324</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Performance data as returned by asset schema</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">Object</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~Performance"><span class="type-signature">(inner) </span>Performance<span class="signature">(meterid)</span><span class="type-signature"> → {Object}</span></h4>
+        <div class="description">
+          <p>Retrieve Performance profile of given asset Metering ID. Note: This is not standarized at the moment and schema is subject to be changed.</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>meterid</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>unique id to dispatch</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line341">line 341</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Performance data as given by meter schema</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">Object</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~setMeta"><span class="type-signature">(inner) </span>setMeta<span class="signature">(key, value)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Set Key Value MetaInformation for account Allows to associate signed meta information to an account which becomes publicly available</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>key</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Of Meta Date</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="name"><code>value</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Of Meta Date</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line176">line 176</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h4 class="name" id="~Stromkonto"><span class="type-signature">(inner) CurrentAccount</span><span class="signature">(meterid)</span><span class="type-signature"> → {Object}</span></h4>
+        <div class="description">
+          <p>Retrieve Currenct Balances for given account. Note: This does not retrieve data from BLC - instead it is using Nordic Energy service</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>meterid</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>unique id to dispatch</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line357">line 357</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <h5>Returns:</h5>
+        <div class="param-desc">
+          <p>Performance data as given by meter schema</p>
+        </div>
+        <dl>
+          <dt> Type </dt>
+          <dd>
+            <span class="param-type">Object</span>
+          </dd>
+        </dl>
+        <h4 class="name" id="~transferCapacity"><span class="type-signature">(inner) </span>transferCapacity<span class="signature">(ethereumAddress, kilowatthours)</span><span class="type-signature"></span></h4>
+        <div class="description">
+          <p>Transfer generation capacity to another ethereum account</p>
+        </div>
+        <h5>Parameters:</h5>
+        <table class="params">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th class="last">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name"><code>ethereumAddress</code></td>
+              <td class="type">
+                <span class="param-type">string</span>
+              </td>
+              <td class="description last">
+                <p>Address to receive capacity</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="name"><code>kilowatthours</code></td>
+              <td class="type">
+                <span class="param-type">number</span>
+              </td>
+              <td class="description last">
+                <p>Kilo-Watt-Hours per year to transfer</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <dl class="details">
+          <dt class="tag-source">Source:</dt>
+          <dd class="tag-source">
+            <ul class="dummy">
+              <li>
+                <a href="index.js.html">index.js</a>, <a href="index.js.html#line241">line 241</a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </article>
+    </section>
+  </div>
+  <nav>
+    <h2><a href="index.html">Home</a></h2>
+    <h3>Modules</h3>
+    <ul>
+      <li><a href="module-CorrentlyWallet.html">NordicEnergyWallet</a></li>
+    </ul>
+    <h3>Tutorials</h3>
+    <ul>
+      <li><a href="tutorial-CorrentlyWallet.draw.html">NordicEnergyWallet.draw</a></li>
+      <li><a href="tutorial-cli.html">NordicEnergyWallet-CLI</a></li>
+      <li><a href="tutorial-getting_started.html">Getting Started with NordicEnergyWallet</a></li>
+      <li><a href="tutorial-roadmap.html">roadmap</a></li>
+    </ul>
+  </nav>
+  <br class="clear">
+  <footer> Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Dec 26 2018 00:18:52 GMT+0100 (CET) </footer>
+  <script>
+    prettyPrint();
+  </script>
+  <script src="scripts/linenumber.js"> </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

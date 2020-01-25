@@ -1,0 +1,16 @@
+cmd: npm test
+targets:
+  PreTest:
+      cmd: "npm run pretest"
+  TestSuite:
+      cmd: "npm run test"
+  Publish:
+    cmd: "npm run coveralls && npm run doc && npm run dist && git add -A && git commit -a -m 'Release Candidate' && npm run dist && npm publish"
+  ContinuesTest:
+      cmd: "mocha -w tests/index.js"
+  BuildDistribution:
+      cmd: "npm run dist"
+  Documentation:
+      cmd: "npm run doc" 
+  Coverage:
+      cmd: "npm run coveralls"
